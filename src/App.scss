@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.app{
+  height: 100vh; 
+  
+
+}
+.sections{
+  width: 100%;
+  height: calc(100vh - 70px);
+  position: relative;
+  top: 70px;
+  scroll-snap-type: y;
+ overflow-y: scroll;
+}
+
+.scroll-area{
+ scroll-snap-align: center;
+}

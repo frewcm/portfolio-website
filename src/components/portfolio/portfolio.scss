@@ -1,0 +1,108 @@
+#portfolio{
+    width: 100%;
+    height: 468px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #EAE7DC;
+  
+}
+   h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: #8E8D8A;
+    overflow-y: hidden;
+    padding: 10px;
+}
+.cardcontainer{
+    width: 100%;
+    height: 668px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    overflow-y: hidden;
+}
+.card .imagecontainer{
+    width: 100%;
+    height: auto;
+   
+}
+.imagecontainer img {
+        width: 100%;
+        height: 320px;
+        border-radius: 5px;
+        object-fit: cover;
+        
+  }
+  .card{
+    height: 400px;
+    width: 300px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2); 
+    display:inline-block;
+    border-radius: 5px;
+    margin-bottom: 100px;
+    overflow-y: hidden;
+}
+.portfoliop{
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+}
+
+@media (max-width:1000px){
+    #portfolio{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #EAE7DC;
+    }
+    .cardcontainer{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        color: #8E8D8A;
+        display:inline-block;
+    }
+}
+@media (max-width: 700px){
+    #portfolio{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #EAE7DC;
+    }
+    .cardcontainer{
+        width: 90%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            color: #8E8D8A;
+            display:inline-block;
+        }
+    }
+    
+}
